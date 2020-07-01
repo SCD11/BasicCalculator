@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Lalezar&display=swap');
+
+body{
+    background-color:rgb(204, 88, 88);
+    /* background:linear-gradient(to right,red,blue); */
+    color:rgb(221, 133, 133);
+    -webkit-user-select: none;
+}
+
+.outer{
+    /* border:1px solid red; */
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:0;
+    padding:0;
+}
+
+.heading{
+    margin:0;
+    padding:0;
+    /* border:1px solid green; */
+    flex-basis:100%;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.title{
+    font-family: Bangers,cursive;
+    margin:0;
+    letter-spacing: 6px;
+    margin-top:25px;
+    flex-basis:100%;
+    text-align: center;
+    /* border:1px solid white; */
+    font-size:2.7rem;
+    color:rgb(243, 207, 115);
+    text-shadow: 0 0 15px black;
+}
+
+.author{
+    margin-top:5px;
+    padding:0;
+    font-family: cursive;
+    font-style: italic;;
+    flex-basis: 100%;
+    text-align: right;
+    padding-right: 10px;
+    font-size: small;
+    text-shadow: 0 0 5px black;
+    color:rgb(236, 220, 126);
+    /* border:1px solid white; */
+}
+
+.calculator{
+    /* border:1px solid yellow; */
+    display:flex;
+    overflow: auto;
+    flex-basis: 90%; 
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:0;
+    margin-left:5%;
+    margin-right:5%;
+    padding:0;
+    background-color: rgb(1, 0, 2);
+    border-radius:15px;
+    padding-bottom: 15px;
+    box-shadow: 3px 3px  5px black;
+    margin-bottom: 50px;
+}
+
+.display{
+    margin-top:15px;
+    margin-left:3%;
+    margin-right:3%;
+    padding:0;
+    border:0;
+    border-radius:15px;
+    flex-basis:94%;
+    max-width: 94%;
+    display:flex;
+    flex-wrap:wrap;
+    background-color:rgb(230, 227, 227);
+    color:black;
+    
+    overflow: hidden;
+}
+
+.display > h1{
+    flex-basis:100%;
+    margin:0;
+    padding:0;
+    text-align: right;
+    padding-right:25px;
+    padding-left:25px;
+    padding-top:5px;
+    font-family: Lalezar,cursive;
+}
+.output{
+    padding-top:5px;
+    line-height: 100%;
+    padding-bottom: 5px;
+    font-size: 2.7rem;
+    font-weight: 100;
+    color:lightcoral; 
+    /* border:1px solid grey;    */
+}
+.input{
+    /* flex-basis:100%; */
+    padding-bottom: 0;
+    color:rgb(118, 197, 223);
+    font-weight: 100;
+    line-height: 100%;
+    margin:0;
+    font-size:1.7rem;
+}
+.number_disp{
+    flex-basis:100%;
+    background-color:lightslategray;
+    color:lightgrey;
+}
+
+.buttons{
+    /* border:1px solid blue; */
+    flex-basis:96%;
+    max-width: 96%;
+    margin-left:3%;
+    margin-right:3%;
+    margin-top:15px;
+    background-color:lightsalmon;
+    border-radius:15px;
+    padding:0;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom:15px;
+}
+.numbers{
+    flex-basis:75%;
+    display:flex;
+    flex-wrap:wrap;
+    border-radius: 5px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: lightgreen;
+    justify-content: space-evenly;
+    padding-top:5px;
+    padding-bottom:15px;
+}
+.functions{
+    flex-basis:20%;
+    background-color:white;
+    border-radius:15px;
+    margin:4px;
+    border-top-right-radius:15px;
+    border-bottom-right-radius:15px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.numbers > div{
+    color:grey;
+    flex-basis:30%;
+    background-color:white;
+    margin-top:5px;
+    border-radius: 5px;
+    padding-top:5px;
+    padding-bottom:5px;
+    text-align: center;
+    font-family: Lalezar,cursive;    
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}
+.numbers > div:active{
+    background-color: lightcoral;
+    color:white;
+}
+.nums{
+    padding:0;
+    margin:0;
+}
+.functions > div{
+    flex-basis:90%;
+    text-align: center;
+    margin-top:5px;
+    border-radius:15px;
+    background-color:lightskyblue;
+    font-family: Lalezar,cursive;
+    color:white;
+}
+.functions > div:active{
+    background-color:rgb(128, 240, 165);
+    color:rgb(83, 83, 83);
+}
+.bottom_text{
+    font-family: Lalezar,cursive;
+    font-size:1.2rem;
+    line-height: 100%;
+    text-shadow: 0 0 5px black;
+}
+.numbers> div:hover{
+    box-shadow:0 3px 4px black;
+}
+.numbers>div:active{
+    color:black;
+    box-shadow:1px 1px 6px black;
+}
+.functions > div:hover{
+    box-shadow: 0px 2px 3px black;
+}
+.functions > div:active{
+    color:white;
+    box-shadow:1px 1px 5px black;
+}
+@media (min-width:1090px){
+    /* body{
+        background-color:white;
+    } */
+    .calculator{
+        flex-basis:25%;
+        max-width: 400px;
+        min-width: 350px;
+    }
+   
+}
+@media ( min-width:750px) and (max-width:1089px){
+    /* body{
+        background-color:pink;
+    } */
+    .calculator{
+        flex-basis:31%;
+        min-width: 370px;
+    }
+  
+}
+@media (min-width:500px) and (max-width:749px){
+    /* body{
+        background-color:lightblue;
+    } */
+    .calculator{
+        flex-basis:51%;
+        min-width: 350px;
+    }
+   
+
+}
